@@ -1,8 +1,13 @@
 import Link from "next/link";
 import { useLang } from "@/hooks/useLang";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
+import FooterLinks from "./FooterLinks";
+import FooterMobileLink from "./FooterMobileLink";
 
 const Footer = () => {
   const { lang, translations } = useLang();
+  const isMedia950 = useMediaQuery(950);
+  const isMedia640 = useMediaQuery(640);
 
   return (
     <footer className="footer">
@@ -16,8 +21,9 @@ const Footer = () => {
             <span>
               <a href="mailto:rostelecom.merc@rt.ru">rostelecom.merc@rt.ru</a>
             </span>
+            {isMedia950 && <FooterLinks />}
           </div>
-
+          {!isMedia950 && <FooterLinks />}
           <ul className="list-reset footer__socials">
             <li className="footer__socials__item">
               <a
@@ -56,7 +62,13 @@ const Footer = () => {
                 {translations[lang].footer.privacy}
               </Link>
             </div>
+            {isMedia640 && (
+              <FooterMobileLink text={translations[lang].footer.full_version} />
+            )}
           </div>
+          {!isMedia640 && (
+            <FooterMobileLink text={translations[lang].footer.mobile_version} />
+          )}
         </div>
       </div>
     </footer>
