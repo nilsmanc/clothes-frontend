@@ -9,17 +9,45 @@
       "privacy": "Privacy policy",
       "mobile_version": "Mobile version",
       "full_version": "Full version of the site"
-    }
-  },
-  "ru": {
-    "header": {
-      "menu_btn": "Меню",
+    },
+    "comparison": {
+      "umbrella": "Umbrellas",
+      "bags": "Bags",
+      "outerwear": "Outerwear",
+      "long-sleeves": "Long-sleeves",
+      "headdress": "Headdress",
+      "hoodie": "Hoodie",
+      "business-souvenirs": "Business-souvenirs",
+      "promotional-souvenirs": "Promotional-souvenirs",
+      "pen": "Pens",
+      "notebook": "Notebooks",
+      "t-shirts": "T-shirts",
+      "main_heading": "Comparison"
+    },
+    "ru": {
+      "header": {
+        "menu_btn": "Меню"
+      },
       "footer": {
         "copyright": "«Ростелеком» Все права защищены",
         "policy": "Политика обработки данных",
         "privacy": "Политика конфиденциальности",
         "mobile_version": "Мобильная версия",
         "full_version": "Полная версия сайта"
+      },
+      "comparison": {
+        "umbrella": "Зонты",
+        "bags": "Сумки",
+        "outerwear": "Верхняя одежда",
+        "long-sleeves": "Лонг-сливы",
+        "headdress": "Головные уборы",
+        "hoodie": "Худи",
+        "business-souvenirs": "Бизнес-сувениры",
+        "promotional-souvenirs": "Промо-сувениры",
+        "pen": "Ручки",
+        "notebook": "Тетради",
+        "t-shirts": "Футболки",
+        "main_heading": "Сравнение"
       }
     }
   }
