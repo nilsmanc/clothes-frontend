@@ -4,3 +4,10 @@ export const getWindowWidth = () => {
 
   return { windowWidth };
 };
+
+export const handleShowSizeTable = (product: IProduct) => {
+  setCurrentProduct(product);
+  setSizeTableSizes({ sizes: product.sizes, type: product.type });
+  addOverflowHiddenToBody();
+  showSizeTable();
+};
