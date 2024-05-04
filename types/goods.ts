@@ -1,3 +1,5 @@
+import { IProduct } from "./common";
+
 export interface ILoadOneProductFx {
   productId: string;
   category: string;
@@ -15,4 +17,9 @@ export interface ILoadProductsByFilterFx {
 
 export interface ILoadWatchedProductsFx {
   payload: { _id: string; category: string }[];
+}
+
+export interface IProducts {
+  count: number;
+  items: IProduct[];
 }
