@@ -1,5 +1,10 @@
 import { setCurrentProduct } from "@/context/goods";
 
+const closeAuthPopup = () => {};
+const setSizeTableSizes = () => {};
+const addOverflowHiddenToBody = () => {};
+const showSizeTable = () => {};
+
 export const getWindowWidth = () => {
   const { innerWidth: windowWidth } =
     typeof window !== "undefined" ? window : { innerWidth: 0 };
@@ -28,4 +33,26 @@ export const showCountMessage = (count: string, lang: string) => {
   }
 
   return lang === "ru" ? "товаров" : "items";
+};
+
+export const removeOverflowHiddenFromBody = () => {
+  const body = document.querySelector("body") as HTMLBodyElement;
+  body.classList.remove("overflow-hidden");
+};
+
+export const handleCloseAuthPopup = () => {
+  removeOverflowHiddenFromBody();
+  closeAuthPopup();
+};
+
+export const closeAuthPopupWhenSomeModalOpened = (
+  showQuickViewModal: boolean,
+  showSizeTable: boolean,
+) => {
+  if (showQuickViewModal || showSizeTable) {
+    closeAuthPopup();
+    return;
+  }
+
+  handleCloseAuthPopup();
 };
