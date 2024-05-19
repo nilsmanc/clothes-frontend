@@ -1,5 +1,18 @@
 {
   "en": {
+    "auth_popup": {
+      "registration_title": "Registration",
+      "registration_text": "Create",
+      "registration_description": "Create an account",
+      "registration_question": "Already have an account?",
+      "login_text": "Login",
+      "login_description": "Login to your account",
+      "forgot_password": "Forgot your password?",
+      "login_question": "Don't have an account yet?",
+      "register": "Register!",
+      "name": "Name",
+      "password": "Password"
+    },
     "common": {
       "all_link": "All",
       "more": "More",
@@ -151,6 +164,19 @@
     }
   },
   "ru": {
+    "auth_popup": {
+      "registration_title": "Регистрация",
+      "registration_text": "Создать",
+      "registration_description": "Создать аккаунт",
+      "registration_question": "Уже есть аккаунт?",
+      "login_text": "Войти",
+      "login_description": "Войти в свой аккаунт",
+      "forgot_password": "Забыли пароль?",
+      "login_question": "Еще нет аккаунта?",
+      "register": "Зарегистрироваться!",
+      "name": "Имя",
+      "password": "Пароль"
+    },
     "common": {
       "all_link": "Все",
       "more": "Ещё",
