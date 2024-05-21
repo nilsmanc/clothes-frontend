@@ -1,3 +1,5 @@
+import { StoreWritable } from "effector";
+
 export interface IProduct {
   _id: string;
   type: string;
@@ -24,3 +26,5 @@ export interface ISizes {
   xl: boolean;
   xxl: boolean;
 }
+
+export type UseGoodsByAuth<T> = StoreWritable<T>;
