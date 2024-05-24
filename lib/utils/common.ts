@@ -1,4 +1,5 @@
 import { setCurrentProduct } from "@/context/goods";
+import { IProduct } from "@/types/common";
 
 const closeAuthPopup = () => {};
 const setSizeTableSizes = () => {};
@@ -55,4 +56,16 @@ export const closeAuthPopupWhenSomeModalOpened = (
   }
 
   handleCloseAuthPopup();
+};
+
+export const getWatchedProductFromLS = () => {
+  let watchedProducts: IProduct[] = JSON.parse(
+    localStorage.getItem("watched") as string,
+  );
+
+  if (!watchedProducts || !Array.isArray(watchedProducts)) {
+    watchedProducts = [];
+  }
+
+  return watchedProducts;
 };
