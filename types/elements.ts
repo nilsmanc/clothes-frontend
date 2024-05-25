@@ -3,3 +3,10 @@ export interface IHeadingWithCountProps {
   title: string;
   spinner?: boolean;
 }
+
+export interface ISkeletonProps {
+  styles: {
+    readonly [key: string]: string;
+  };
+  count?: number;
+}
