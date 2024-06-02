@@ -27,4 +27,16 @@ export interface ISizes {
   xxl: boolean;
 }
 
+export interface ISelectedSizes {
+  sizes: ISizes;
+  type: string;
+  className?: string;
+}
+
+export interface IBaseEffectProps {
+  jwt: string;
+  id: string;
+  setSpinner: (arg0: boolean) => void;
+}
+
 export type UseGoodsByAuth<T> = StoreWritable<T>;
