@@ -1,5 +1,6 @@
 import { setCurrentProduct } from "@/context/goods";
 import { IProduct } from "@/types/common";
+import { closeShareModal, closeSizeTable } from "@/context/modals";
 
 const closeAuthPopup = () => {};
 const setSizeTableSizes = () => {};
@@ -68,4 +69,17 @@ export const getWatchedProductFromLS = () => {
   }
 
   return watchedProducts;
+};
+
+export const closeSizeTableByCheck = (showQuickViewModal: boolean) => {
+  if (!showQuickViewModal) {
+    removeOverflowHiddenFromBody();
+  }
+
+  closeSizeTable();
+};
+
+export const handleCloseShareModal = () => {
+  removeOverflowHiddenFromBody();
+  closeShareModal();
 };
