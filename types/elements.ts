@@ -10,3 +10,8 @@ export interface ISkeletonProps {
   };
   count?: number;
 }
+
+export interface IProductAvailableProps {
+  vendorCode: string;
+  inStock: number;
+}
