@@ -24,3 +24,11 @@ export interface IProductItemActionBtnProps {
   withTooltip?: boolean;
   marginBottom?: number;
 }
+
+export interface IAddToCartIconProps {
+  isProductInCart: boolean;
+  addedClassName: string;
+  className: string;
+  addToCartSpinner: boolean;
+  callback: VoidFunction;
+}
