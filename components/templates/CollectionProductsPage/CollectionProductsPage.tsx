@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { notFound } from "next/navigation";
 import { loadProductsByFilter } from "@/context/goods";
 import { useProductsByCollection } from "@/hooks/useProductsByCollection";
+import ProductsListItem from "@/components/modules/ProductsListItem/ProductsListItem";
 import { basePropsForMotion } from "@/constants/motion";
 import { getSearchParamsUrl } from "@/lib/utils/common";
 import {
