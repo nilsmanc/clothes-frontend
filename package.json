@@ -32,6 +32,7 @@
     "react-hook-form": "^7.51.4",
     "react-hot-toast": "^2.4.1",
     "react-paginate": "^8.2.0",
+    "react-share": "^5.1.0",
     "react-slick": "^0.30.2",
     "swiper": "^11.1.1"
   },
