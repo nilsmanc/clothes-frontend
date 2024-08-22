@@ -1,5 +1,7 @@
 import { useDebounceCallback } from "@/hooks/useDebounceCallback";
 import { useLang } from "@/hooks/useLang";
+import { usePriceFilter } from "@/hooks/usePriceFilter";
+import { getCheckedPriceFrom, getCheckedPriceTo } from "@/lib/utils/catalog";
 import styles from "@/styles/catalog/index.module.scss";
 
 const PriceFilter = ({

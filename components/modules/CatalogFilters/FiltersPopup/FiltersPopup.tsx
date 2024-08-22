@@ -12,7 +12,9 @@ import {
   showCountMessage,
 } from "@/lib/utils/common";
 import { ICatalogFiltersProps } from "@/types/catalog";
+import PriceFilter from "./PriceFilter";
 import CategoryFilterList from "../CategoryFilterList";
+import SizesFilter from "./SizesFilter";
 import ColorsFilter from "./ColorsFilter";
 import { $products } from "@/context/goods/state";
 import { $filtersPopup } from "@/context/catalog/state";
