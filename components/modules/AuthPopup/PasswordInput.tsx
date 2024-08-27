@@ -10,6 +10,7 @@ const PasswordInput = ({ register, errors }: IAuthInput) => {
       <input
         type="password"
         className="form__block__input"
+        placeholder={translations[lang].auth_popup.password}
         {...register("password", {
           required: translations[lang].validation.required_password,
           minLength: 4,
