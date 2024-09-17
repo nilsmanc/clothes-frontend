@@ -3,6 +3,7 @@ import { useState } from "react";
 import { addProductToComparison } from "@/context/comparison";
 import { IProduct } from "@/types/common";
 import { useGoodsByAuth } from "./useGoodsByAuth";
+import { addComparisonItemToLS } from "@/lib/utils/comparison";
 import { isUserAuth } from "@/lib/utils/common";
 import { $comparison, $comparisonFromLs } from "@/context/comparison/state";
 
