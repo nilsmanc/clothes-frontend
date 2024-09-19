@@ -1,6 +1,11 @@
 import { Effect } from "effector";
 import { useUnit } from "effector-react";
 import { useEffect, useState } from "react";
+import {
+  editUserEmailFx,
+  editUsername,
+  verifyEmailFx,
+} from "@/context/profile";
 import { isUserAuth } from "@/lib/utils/common";
 
 export const useProfileEdit = <T, K>(
